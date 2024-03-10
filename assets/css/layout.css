@@ -1,0 +1,255 @@
+/* 불러오라 */
+@import './font.css'; 
+/* 불러오라 */
+@import './reset.css'; 
+/* 불러오라 */
+@import './common.css'; 
+
+
+/* 메뉴 gnb 라인 */
+.group-top{
+    position: relative;
+    display: flex;
+     justify-content: space-between;
+}
+.group-top .logo-area{
+    margin-top: 5px;
+}
+.group-top .logo-area .logo{}
+.group-top .logo-area .logo a{
+    display: block;
+    width: 105px;
+    height: 27px;
+    background-position: -5px -165px;
+}
+
+
+.gnb{
+    position: absolute;   
+    margin-left: 145px; 
+}
+.gnb .nav-list{
+    display: flex;
+    gap: 20px;
+}
+.gnb .nav-item{
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.gnb .nav-item:hover{
+    color: #1E6CB3;
+}
+
+.util-area{   
+    display: flex;
+    gap: 20px; 
+}
+.util-area a{
+}
+.util-area p{
+    font-size: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.header .group-bottom{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 119px;
+}
+.header .slogun-area{
+    display: flex;
+}
+.header .slogun-area a{
+    width: 133px;
+    height: 51px;
+    background: url(../img/seoul-slogan.png) no-repeat;
+}
+.header .slogun-area{}
+.header .search-area{
+    position: absolute;
+    top: 50%;left: 240px;
+    transform: translateY(-50%);
+    align-items: center;
+}
+.header .search-area .wrap{
+    display: flex;
+    position: relative;
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+}
+.header .search-area .input-text{
+    flex: 1;
+    padding: 0 10px;
+    border: 0;
+}
+.header .search-area .input-text::placeholder{
+    color: #2292e9;
+}
+.header .search-area .btn-keyboard{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45px;
+
+}
+.header .search-area .btn-submit{
+    width: 36px;
+    background-position: -32px -97px;
+}
+
+.header .lang-area{
+    display: flex;
+    position: absolute;
+    top: 0;right: 0;
+    height: 21px;
+}
+
+.header .lang-area select{
+    width: 80px;
+    height: 21px;
+    border-color: #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+    appearance: none;
+    background-image: url(../img/select_arrow.png);
+    background-size: 8px;
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+}
+.header .lang-area .btn-go{
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+}
+
+.header .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.header .weather-area{
+    display: flex;
+    align-items: center;
+    width: 290px;
+}
+.header .weather-area .img-box{}
+.header .weather-area .text-box{
+}
+.header .weather-area .weather{
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+}
+.header .weather-area .temp{
+    font-size: 25px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.header .weather-area .desc{}
+.header .weather-area .dust{
+    display: flex;
+    font-size: 13px;
+    margin-top: 7px;
+}
+.header .weather-area .dust .good{
+    color: #2292e9;
+    font-size: 14px;
+}
+
+
+/* 누리집정보&SNS */
+.footer{}
+.footer .sc-nuri{
+    margin-top: 35px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.footer .sc-nuri .nuri{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .sc-nuri .nuri .nuri-list{
+    display: flex;
+    gap: 5px;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #636363;
+}
+.footer .sc-nuri .nuri .nuri-item{
+}
+
+.footer .sc-nuri .nuri .nuri-item b{
+    color: #000;
+    font-weight: 700;
+}
+
+.footer .bar{
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    margin: 0 10px;
+    content: "";
+    display: inline-block;
+}
+
+.footer .sc-nuri .sns-list{
+    display: flex;
+    gap: 6px;
+}
+.footer .sc-nuri .sns-item{}
+.footer .sc-nuri .sns-item a{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+
+.footer .sc-nuri .sns-item .facebook{background-position: -25px 0;}
+.footer .sc-nuri .sns-item .insta{background-position: -75px 0;}
+.footer .sc-nuri .sns-item .kakao{background-position: -100px 0;}
+.footer .sc-nuri .sns-item .youtube{background-position: -125px 0;}
+.footer .sc-nuri .sns-item .blog{background-position: -150px 0;}
+
+.footer .sc-nuri .sns-item .facebook:hover{background-position: -25px -25px;}
+.footer .sc-nuri .sns-item .insta:hover{background-position: -75px -25px;}
+.footer .sc-nuri .sns-item .kakao:hover{background-position: -100px -25px;}
+.footer .sc-nuri .sns-item .youtube:hover{background-position: -125px -25px;}
+.footer .sc-nuri .sns-item .blog:hover{background-position: -150px -25px;}
+
+.footer .sc-info{
+    padding: 22px 0;
+}
+.footer .sc-info .group-info{}
+.footer .sc-info .contact-area{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .sc-info .info-left{
+    display: flex;
+}
+.footer .sc-info .info-left a{
+    background-position: -180px 0;
+    width: 108px;
+}
+ 
+.footer .sc-info .info-left p{
+    font-size: 11px;
+    color: #636363;    
+    padding: 2px 0;
+    margin-left: 40px;
+}
+
+.footer .sc-info .info-right{}
+.footer .sc-info .info-right a{}
+.footer .sc-info .info-right img{}
+

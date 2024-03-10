@@ -1,0 +1,69 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0)
+}
+
+.inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* 이미지가 나오고싶다면... */
+/* sp1 */
+.footer .sc-info .info-left .qna,
+.sc-banner .btn,
+.sc-visual .main-slide .control .btn,
+.header .search-area .btn-submit,
+.group-top .logo-area .logo a{
+    background-image: url(../img/icon_set_common_2019.png);
+    background-repeat: no-repeat;
+}
+
+/* sp2 */
+.sc-visual .group-nav button::before{
+    background-image: url(../img/icon_main_2019.png);
+    background-repeat: no-repeat;
+}
+
+/* sp3 */
+.sc-service .group-header .sub-area a{
+    background-image: url(../img/logo_event.png);
+    background-repeat: no-repeat;
+}
+
+/* sp4 */
+.sc-service .icon-item a::before{
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_service_202205.png);
+    background-repeat: no-repeat;
+}
+
+/* sp5 */
+.sc-media .group-sns .sns-item a{
+    background-image: url(../img/icon_sns_list_01.png);
+    background-repeat: no-repeat;
+}
+
+
+/* sp6 */
+.footer .sc-nuri .sns-item a{
+    background-image: url(../img/icon_sns_list_02.png);
+    background-repeat: no-repeat;
+}
+/* 
+.fix-top{
+    position: fixed;
+    bottom: 10px;
+    top: 10px;
+}
+.fix-top .btn-top{
+    width: 50px;
+    height: 50px;
+    background: #00f;
+} */
